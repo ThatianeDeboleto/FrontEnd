@@ -1,0 +1,132 @@
+/*declarar variaveis para utilizar uma propriedade, é possível mudar em um lugar e assim alterar todos*/
+
+:root{
+    --vermelho:#e50914;
+    --preta:#141414;
+    --branco:#AAA;
+
+}
+
+/*RESETAR A PAGINA*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background:var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+/*estilizando a caixa header da classe container(alinhar na tela em linha, centralizado, espaco entre tag filha e nav na horizontal  */
+
+header .container{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+
+}
+
+/*mudando a logo(espaço da margem esquerda, cor, tipo de fonte,peso da fonte*/
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+/*para acessar a tag link( tirar o underline, cor e espaço na margem direita)*/
+
+header nav a{
+    text-decoration: none;
+    color:var(--branco);
+    margin-right: 10px;
+}
+
+/*quando o mouse estiver em cima(mudar de cor)*/
+ header nav a:hover{
+    color: #fff;
+ }
+
+ /*filme principal(por imagem de fundo; cores em gradiente; e posicionamento*/
+
+ .filme-principal{
+     font-size: 16px;
+     background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/img/capa-dark.jpg');
+     height: 400px;
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+
+ }
+
+ /*distanciar os botoes do texto*/
+.filme-principal .descricao{
+    margin-bottom: 90px;
+    margin-top: 10px;
+}
+/*tamanho só do titulo*/
+
+.titulo{
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: 'Arial',sans-serif;
+}
+
+.botao{
+    background-color:rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size:12px;
+    /*mudar o ponteiro;tempo de mudanca*/
+    cursor: pointer;
+    transition: .2s ease all;
+
+}
+
+/*muda quando ponteiro esta em cima do botao*/
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+/*espacamento da tag i e a letra*/
+
+.botao i{
+    margin-right: 8px;
+}
+
+/*mexe em tudo dentro do container*/
+.container{
+    margin-left: 20px;
+}
+
+/*mexe apenas no container dentro do filme principal*/
+.filme-principal .container{
+    width: 50%;
+}
+
+
+/*imagens do carrossel para usar o jquery*/
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+/*espaco entre carrossel e a main*/
+
+carrossel-filmes{
+    margin-top: 15px;
+}
