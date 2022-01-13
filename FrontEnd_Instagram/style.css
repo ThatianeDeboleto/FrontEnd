@@ -1,0 +1,175 @@
+/* resetando alguns estilos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+/* estização do body */
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* estilização da div pai */
+.insta-wrapper {
+    display: flex;
+    align-items: center; /* alinhando todos os itens ao centro e na vertical */
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+/* estilização da div da imagem do celular da home */
+.insta-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+/* estilização da div da imagem do celular da home - tag img */
+.insta-phone img {
+    height: 50rem;
+}
+
+/* estilização da div das informações de acesso ao Instagram */
+.insta-logon {
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column; /* inverte os eixos dos dois estilos anteriores */
+    width: 50%;
+    min-height: 34rem;
+}
+
+/* estilização group, div container do logon/logout (remover conta) */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+/* nth-child(1) -> pega o container do logon/logout (remover conta) */
+.container:nth-child(1) {
+    min-height: 19rem;
+}
+
+/* estilização da logo do instagram */
+.insta-logo {
+    height: 3rem;
+}
+
+/* estilização da foto do perfil do usuário */
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; /* não deixa a foto ficar fora da div em que ele se encontra */
+}
+
+.profile-photo img {
+    height: 6rem;
+}
+
+/* estilização do botão para continuar o login com o perfil atual */
+.insta-login {
+    background-color: #0095f6; /* cor do botão */
+    color: #ffffff; /* cor do texto do botão */
+    padding: 8px; /* altura e largura do botão */
+    border-radius: 4px; /* arredondando os cantos do botão */
+}
+
+/* estilização do botão para remover conta */
+.insta-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* estilização da div container da segunda caixa abaixo do login */
+.account {
+    color: rgb(160, 160, 160);
+}
+
+.link {
+    color: #0095f6;
+    font-weight: bold;
+}
+
+/* estilização da div container com as informações para baixar o app do instagram */
+.get {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+/* estilização da div de download nas plataformas iOS e Android */
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./assets/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./assets/googleplay-button.png');
+}
+
+/* responsividade para tablets */
+@media(max-width: 1024px) {
+    .insta-wrapper {
+        width: 90%;
+    }
+}
+
+/* responsividade para celulares */
+@media(max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .insta-wrapper {
+        width: 90%;
+    }
+
+    .insta-phone {
+        display: none;
+    }
+
+    .insta-logon {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
+}
