@@ -1,0 +1,176 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	/*scroll-behavior: smooth;*/
+}
+
+.LandingPG{
+	position: relative;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+	min-height: 100vh;
+	transition: .1s;
+	padding: 100px;
+	background-image: url(la1.jpg);
+	background-size: cover;
+	background-position: center;
+	animation: slide 10s infinite;
+}
+
+@keyframes slide{
+	20%{
+		background-image: url(la1.jpg);
+	}
+	30%{
+		background-image: url(la2.jpg);
+	}
+	
+	50%{
+		background-image: url(e8.jpg);
+	}
+	
+	70%{
+		background-image: url(e1.jpg);
+	}
+	
+	86%{
+		background-image: url(w8.jpg);
+	}
+	
+	
+
+}
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo{
+	position: relative;
+	font-weight: 1000;
+	margin-left: 38px;
+	font-size: 38px;
+	color: red;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+
+header .nav{
+	position: relative;
+	display: flex;
+}
+
+header .nav li{
+	list-style: none;
+}
+
+header .nav li a{
+	display: inline-block;
+	color: white;
+	font-weight: bold;
+	margin-top: 8px;
+	text-decoration: none;
+	font-size: 25px;
+	padding: 18px 22px;
+	text-transform: none;
+
+}
+
+
+header .nav li a:hover{
+	color: red;
+}
+
+header .nav li a span{
+	padding: 10px 18px;
+	outline: none;
+	border-radius: 8px;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	background-color: black;
+}
+
+header .nav li a span:hover{
+	background-color: red;
+	color: white;
+	transition: 1s;
+}
+
+.content{
+	position: relative;
+	margin-top: 100px;
+	margin-left: 30px;
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content .text-area h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: white;
+    width: 80%;
+    font-weight: bolder;
+    letter-spacing: 10px;
+}
+
+.content .text-area h2{
+    font-size: 42px;
+    margin-bottom: 16px;
+    color: white;
+    margin-top: 10px;
+    min-width: 100px;
+    font-weight: 500;
+}
+
+.content .text-area h3{
+	text-transform: none;
+	margin-top: 19px;
+	font-size: 16px;
+	color: white;
+	letter-spacing: 8px;
+}
+
+.content .text-area h4{
+	text-transform: none;
+	font-size: 22px;
+	margin-bottom: 3px;
+	color: white;
+	letter-spacing: 2px;
+}
+
+.content .text-area a{
+	display: inline-block;
+	padding: 14px 24px;
+	margin-top: 5px;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: white;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	font-weight: bold;
+	background-color: black;
+	text-decoration: none;
+}
+.content .text-area a:hover{
+	background-color: red;
+	color: white;
+	transition: 1s;
+}
+
+
