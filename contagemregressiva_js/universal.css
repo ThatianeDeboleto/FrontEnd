@@ -1,0 +1,20 @@
+
+@font-face{
+    font-family: Courier;
+    src: url('FONTS/Courier-Regular.ttf');
+}
+
+* {
+    font-family: Courier;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue: #5F9EA0;
+    --gray:  #191A18;
+    --DarkSlateGray: #2F4F4F;
+    --font-standard: Mon;
+    --text-color: #ddd;
+}
