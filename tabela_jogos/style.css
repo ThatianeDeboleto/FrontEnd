@@ -1,0 +1,61 @@
+* {
+  text-align: center;
+}
+
+body {
+  font-family: DejaVu Sans Mono, monospace;
+  text-align: center;
+  color: #ffff;
+  min-height: 400px;
+  background-image: url("https://i.pinimg.com/originals/81/5b/32/815b321f823ccaac8c3977b20d77ed80.gif");
+  background-color: #111;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  font-family: "American Typewriter", monospace;
+  color: #ffffff;
+  margin: 0 0 5px;
+  Opacity:
+}
+
+.page-subtitle {
+  font-family: "American Typewriter", monospace;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+table {
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+
+h1 {
+  color: white;
+}
+
+th,
+tr,
+td {
+  border: solid 1px white;
+  color: white;
+}
