@@ -1,0 +1,136 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(circle at 0% 0%, #b3e7ff 0, #41a0e0 50%, #005ead 100%);
+    display: grid;
+    place-items: center;
+}
+
+section::after
+{
+    position: absolute;
+    content: '';
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(rgb(238, 255, 0),
+    rgb(0, 110, 255));
+    top: 10%;
+    right: 20%;
+    border-radius: 10px;
+    animation: animate 5s ease-in-out infinite;
+}
+
+section::before
+{
+    position: absolute;
+    content: '';
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(rgb(238, 255, 0),
+    rgb(0, 110, 255));
+    bottom: 10%;
+    left: 20%;
+    border-radius: 10px;
+    animation: animate 5s ease-in-out infinite;
+    /* Add animação infinita */
+    animation-delay: -2.5s;
+}
+
+@keyframes animate {
+    0%,100%
+    {
+        transform: translateY(-20px);
+    }
+
+    50%
+    {
+        transform: translateY(20px);
+    }
+}
+
+.card
+{
+    position: relative;
+    width: 350px;
+    z-index: 1000;
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(112, 53, 221, 0.2);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+}
+
+.card .imgBox
+{
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.card .imgBox img
+{
+    width: 150px;
+    border-radius: 50%;
+}
+
+.card .content
+{
+    margin-top: 30px;
+}
+
+.card .content .name
+{
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.card .content .work
+{
+    text-align: center;
+    color: #FFC900;
+    font-style: italic;
+    font-weight: 400;
+}
+.card .content .visit
+{
+    margin: 40px 0;
+    text-align: center;
+}
+.card .content .visit a
+{
+    text-decoration: none;
+    padding: 12px 24px;
+    background: #FFC900;
+    color: #fff;
+}
+
+.card .content .sm
+{
+    text-align: center;
+}
+
+.card .content .sm a
+{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    transition: 0.4s ease;
+}
+.card .content .sm a:hover
+{
+    color: #FFC900;
+}
